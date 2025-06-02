@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF- համ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manback Guatemala - Bienes Raíces en Guatemala</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Consider adding Font Awesome for icons if desired -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Manback <span class="guatemala-logo">Guatemala</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#listings">Propiedades</a></li>
+                    <li><a href="#booking">Agendar Visita</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Encuentra tu Hogar Ideal en Guatemala</h1>
+                <p>Explora miles de propiedades en venta y alquiler en todo el país.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Ciudad, zona, tipo de propiedad...">
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="info-section">
+            <div class="container">
+                <h2>Bienvenido a Manback Guatemala</h2>
+                <p>Somos tu portal líder para la búsqueda de bienes raíces en la hermosa tierra de Guatemala. Desde apartamentos modernos en la Ciudad de Guatemala hasta casas coloniales en Antigua o terrenos con vistas al Lago Atitlán, te ayudamos a encontrar exactamente lo que necesitas.</p>
+                <p>Nuestro compromiso es ofrecerte una experiencia de búsqueda transparente, fácil y efectiva.</p>
+            </div>
+        </section>
+
+        <section id="listings" class="listings-section">
+            <div class="container">
+                <h2>Propiedades Destacadas</h2>
+                <div class="listings-grid">
+                    <!-- Sample Listing Card 1 -->
+                    <div class="listing-card">
+                        <img src="https://placehold.co/600x400/E8A87C/FFF?text=Casa+Colonial" alt="Casa en Antigua">
+                        <div class="listing-info">
+                            <span class="price">GTQ 2,500,000</span>
+                            <h3>Hermosa Casa Colonial en Antigua</h3>
+                            <p class="address">Antigua Guatemala, Sacatepéquez</p>
+                            <div class="details">
+                                <span><i class="fas fa-bed"></i> 4 hab</span>
+                                <span><i class="fas fa-bath"></i> 3 baños</span>
+                                <span><i class="fas fa-ruler-combined"></i> 300 m²</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Ver Detalles</a>
+                        </div>
+                    </div>
+
+                    <!-- Sample Listing Card 2 -->
+                    <div class="listing-card">
+                        <img src="https://placehold.co/600x400/4A444B/FFF?text=Apartamento+Moderno" alt="Apartamento en Zona 14">
+                        <div class="listing-info">
+                            <span class="price">GTQ 1,200,000</span>
+                            <h3>Apartamento Moderno, Zona 14</h3>
+                            <p class="address">Ciudad de Guatemala, Guatemala</p>
+                            <div class="details">
+                                <span><i class="fas fa-bed"></i> 2 hab</span>
+                                <span><i class="fas fa-bath"></i> 2 baños</span>
+                                <span><i class="fas fa-ruler-combined"></i> 120 m²</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Ver Detalles</a>
+                        </div>
+                    </div>
+
+                    <!-- Sample Listing Card 3 -->
+                    <div class="listing-card">
+                        <img src="https://placehold.co/600x400/C38D9E/FFF?text=Terreno+Lago" alt="Terreno en Atitlán">
+                        <div class="listing-info">
+                            <span class="price">GTQ 750,000</span>
+                            <h3>Terreno con Vista al Lago Atitlán</h3>
+                            <p class="address">Panajachel, Sololá</p>
+                            <div class="details">
+                                <span><i class="fas fa-mountain"></i> Vistas</span>
+                                <span><i class="fas fa-ruler-combined"></i> 1000 v²</span>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Ver Detalles</a>
+                        </div>
+                    </div>
+                     <!-- Add more cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <h2>Agendar una Visita</h2>
+                <p>¿Interesado en alguna propiedad? Completa el formulario para agendar una reunión con nuestros asesores.</p>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono (+502):</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ej: 5555-1234" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="property-interest">Propiedad de Interés (Opcional):</label>
+                        <input type="text" id="property-interest" name="property-interest" placeholder="Ej: Casa en Antigua, ID #123">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje Adicional:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="contact-info-grid">
+                    <div class="contact-item">
+                        <h3><i class="fas fa-map-marker-alt"></i> Dirección</h3>
+                        <p>Avenida Las Américas 10-50, Zona 13<br>Ciudad de Guatemala, Guatemala</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3><i class="fas fa-phone"></i> Teléfono</h3>
+                        <p>+502 2300-MANB (2300-6262)</p>
+                        <p>+502 5550-BACK (5550-2225)</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3><i class="fas fa-envelope"></i> Correo Electrónico</h3>
+                        <p>info@manbackguatemala.gt</p>
+                        <p>ventas@manbackguatemala.gt</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3><i class="fas fa-clock"></i> Horario de Atención</h3>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                        <p>Sábados: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+                 <!-- Optional: Add a simple contact form or map embed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Manback Guatemala. Todos los derechos reservados.</p>
+            <p>Una réplica inspirada en Zillow, para el mercado guatemalteco.</p>
+            <!-- Add social media links here if desired -->
+        </div>
+    </footer>
+
+    <!-- Script for potential future interactivity, like sticky header -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
